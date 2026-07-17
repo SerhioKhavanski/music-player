@@ -21,7 +21,7 @@ type TrackListItemOutputAttributes={
 export const getTrack= (selectedTrackId:string) =>{
     const promise: Promise<{data:GetTrackDetailsOutputData}> = fetch('https://musicfun.it-incubator.app/api/1.0/playlists/tracks/'+selectedTrackId,{
     headers:{
-        'api-key':'332f2e3f-8919-4562-981d-3178b715a51d'
+        'api-key':import.meta.env.VITE_API_KEY
     }
     }).then(res=>res.json())
     return promise
@@ -30,7 +30,7 @@ export const getTrack= (selectedTrackId:string) =>{
 export const getTracks = () => {
     const promise: Promise<{data:Array<TrackListItemOutput>}> =  fetch('https://musicfun.it-incubator.app/api/1.0/playlists/tracks',{
     headers:{
-        'api-key':'332f2e3f-8919-4562-981d-3178b715a51d'
+        'api-key':import.meta.env.VITE_API_KEY
     }
     }).then(res=>res.json())
     return promise
