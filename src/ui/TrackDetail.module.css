@@ -1,0 +1,13 @@
+.track{
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.185);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.track h2{
+    font-size:24px;
+}
