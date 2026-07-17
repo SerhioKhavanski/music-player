@@ -9,6 +9,7 @@ export function MainPage() {
     const handleClick = (id: string | null):void => {setSelectedId(id)}
     return (
         <div>
+            <h1>Music player</h1>
             <PageTitle />
             <div className="container">
                 <div className="wrapper">
